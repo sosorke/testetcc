@@ -1,4 +1,4 @@
 window.CLINICA_CONFIG = {
-  googleAppsScriptUrl: "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet",
+  googleAppsScriptUrl: "https://script.google.com/macros/s/AKfycbxW3QNWl9NsNLrUfSmbNn8aOdmQL61NLAolFueJN40q_637-qABlH3I91DwCI4MISrkqQ/exec",
   googleSheetUrl: ""
 };
