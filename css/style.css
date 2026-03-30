@@ -184,4 +184,7 @@ p, li { color: var(--muted); }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
-
+.logo {
+  height: 30px;
+  width: auto;
+}
