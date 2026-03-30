@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Solicite um agendamento na Alexa Medeiros Odontologia com confirmação simulada no navegador.">
+  <title>Agendamento | Alexa Medeiros Odontologia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Prata&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="agendamento">
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Alexa Medeiros Odontologia">
+        <span class="brand-mark">AM</span>
+        <span class="brand-text">
+          <strong>Alexa Medeiros</strong>
+          <span>Odontologia</span>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Abrir menu">
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav" aria-label="Principal">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="sobre.html" data-nav="sobre">Sobre</a>
+        <a href="servicos.html" data-nav="servicos">Serviços</a>
+        <a href="contato.html" data-nav="contato">Contato</a>
+        <a href="agendamento.html" data-nav="agendamento" class="button button--nav">Agendar</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="section page-hero">
+      <div class="container booking-layout">
+        <div class="reveal">
+          <p class="eyebrow">Agendamento</p>
+          <h1>Solicite seu horário em poucos passos.</h1>
+          <p class="lead">O envio funciona no front-end e pode registrar os dados no Google Sheets via Apps Script, sem precisar de backend próprio.</p>
+          <ul class="check-list">
+            <li>Preenchimento rápido</li>
+            <li>Validação em JavaScript</li>
+            <li>Mensagem de sucesso instantânea</li>
+          </ul>
+        </div>
+        <div class="form-card reveal reveal-delay">
+          <form class="site-form" id="agendamento-form" novalidate>
+            <label>
+              Nome completo
+              <input type="text" name="nome" placeholder="Seu nome completo" required>
+            </label>
+            <label>
+              Telefone
+              <input type="tel" name="telefone" placeholder="(11) 99999-9999" required>
+            </label>
+            <label>
+              E-mail
+              <input type="email" name="email" placeholder="voce@email.com" required>
+            </label>
+            <label>
+              Data desejada
+              <input type="date" name="data" id="booking-date" required>
+            </label>
+            <label>
+              Período preferido
+              <select name="periodo" required>
+                <option value="">Selecione</option>
+                <option value="manhã">Manhã</option>
+                <option value="tarde">Tarde</option>
+              </select>
+            </label>
+            <label>
+              Observações
+              <textarea name="mensagem" rows="4" placeholder="Conte brevemente sua necessidade"></textarea>
+            </label>
+            <button class="button" type="submit">Solicitar agendamento</button>
+            <p class="form-feedback" id="agendamento-feedback" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Alexa Medeiros Odontologia</strong>
+        <p>Atendimento odontológico com delicadeza, clareza e cuidado contínuo.</p>
+      </div>
+      <div>
+        <strong>Contato</strong>
+        <p>(11) 98888-0000</p>
+        <p>contato@alexamedeirosodonto.com.br</p>
+      </div>
+      <div>
+        <strong>Localização</strong>
+        <p>Rua das Flores, 245</p>
+        <p>Centro, São Paulo - SP</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site-config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
