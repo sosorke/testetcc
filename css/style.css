@@ -185,7 +185,7 @@ p, li { color: var(--muted); }
   .reveal { opacity: 1; transform: none; }
 }
 .logo {
-  height: 25px;
+  height: 50px;
   width: auto;
 }
 
