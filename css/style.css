@@ -185,6 +185,11 @@ p, li { color: var(--muted); }
   .reveal { opacity: 1; transform: none; }
 }
 .logo {
-  height: 30px;
+  height: 25px;
   width: auto;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
 }
